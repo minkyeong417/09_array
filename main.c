@@ -5,20 +5,19 @@
 
 int main(int argc, char *argv[]) {
 	
-	int score [5];
-	
-	score[0]=10;
-	score[1]=20;
-	score[2]=30;
-	score[3]=40;
-	score[4]=50;
-	
 	int i;
+	int grade[5];
+	int score[5];
 	
 	for (i=0;i<5;i++)
 	{
-		printf("score[%d]=%d\n",i,score[i]);
+		grade[i]=rand()%100;
+		score[i]=grade[i];
 	}
+	
+	for (i=0;i<5;i++)
+		printf("score[%d]=%d\n",i,score[i]);
+	
 	
 	return 0;
 }
